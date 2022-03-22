@@ -1,0 +1,145 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");*/
+/*colors: #0065FC(main blue) #DEEBFF(lighter blue) #F2F2F2(background gray) */
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    margin: 0 48px;
+}
+
+header, .navlist, .search-location, .filters-list{
+    display: flex;
+}
+
+header{
+    justify-content: space-between;
+}
+
+/*ul{
+    padding: 0px;
+    height: 23px;
+}
+
+li{
+    height: 23px!important;
+}*/
+
+.site-logo{
+    height: 64px;
+}
+
+.header-nav{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.navlist{
+    margin-top: 0px;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+.navlist li{
+    border-top: solid 2px white;
+    padding: 25px;
+}
+
+.navlist li:hover, .navlist li:active{
+    border-top: solid 2px #0065FC;
+    cursor: pointer;
+    color: #0065FC
+}
+
+form{
+    font-size: 17px;
+}
+
+.search-location{
+    justify-content: flex-start;
+}
+
+input{
+    border: none;
+    height: auto;
+    font-weight: bold;
+    padding: 15px;
+}
+
+input[type="button"]{
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.fa-location-dot{
+    height: 20px;
+    width: 30px;
+    color: black;
+}
+
+input[type="submit"]{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: #fff;
+    background-color: #0065FC;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #0021DA;
+}
+
+.filters{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.filters-title{  
+    padding: 10px 0;
+}
+
+.filters-list{
+    list-style-type: none;
+    font-weight: 600;
+    padding-left: 0px;
+}
+
+.filters-list-element{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 25px;
+    height: 50px;
+    border: solid 2px #f2f2f2;
+    border-radius: 50px;
+    transition: 0.3s ease-in;
+}
+
+.filters-list-element span{
+    padding: 9.5px 0;
+    padding-right: 12.5px;
+}
+
+.filters-list-element i{
+    background-color: #deebff;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin: -2px 12.5px;
+    margin-left: -2px;
+    padding-top: 15px;
+    border-radius: 50px;
+    transition: 0.3s ease-in;
+}
+
+.filters-list-element:hover{
+    cursor: pointer;
+    background-color: #deebff;
+}
+
+.filters-list-element:hover i{
+    transform: rotate(360deg);
+}
