@@ -1,1 +1,1 @@
-# altgt22-p2-booki
+projet2-booki-alt22
