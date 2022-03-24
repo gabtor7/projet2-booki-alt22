@@ -11,7 +11,7 @@ body{
     margin: 0 48px;
 }
 
-header, .navlist, .search-location, .filters-list{
+header, .navlist, .search-location, .filters-list, .accommodations-container{
     display: flex;
 }
 
@@ -142,4 +142,53 @@ input[type="submit"]:hover{
 
 .filters-list-element:hover i{
     transform: rotate(360deg);
+}
+
+h3{
+    margin: 0;
+    font-weight: 700;
+}
+
+.main-content{
+    /*nothing yet*/
+}
+
+.accommodations-container{
+    width: 100%;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin-right: 3.5%;
+    border-radius: 25px;
+}
+
+.cards-container{
+    background-color: #f2f2f2;
+    padding: 3.5%;
+    flex-direction: column;
+}
+
+.all-accommodations{
+    width: 66%;
+    margin-right: 3.5%;
+    display: flex;
+}
+
+.accommodation-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.container-title h3{
+    width: 100%;
+}
+
+.found-accommodation{
+    flex: 1 0 30%;
+    justify-content: space-between;
+}
+
+.popular-accommodations{
+
 }
