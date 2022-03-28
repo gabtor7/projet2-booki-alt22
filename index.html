@@ -6,93 +6,160 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="styles.css">
-        <script src="https://use.fontawesome.com/c16ce3c4ad.js"></script>
-    </head>
+        <!--<script src="https://use.fontawesome.com/c16ce3c4ad.js"></script>-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    </head>
     <body>
-        <header>
-            <img src="assets/logo/Booki.png" class="site-logo" />
+        <header class="disflex">
+            <img src="assets/logo/Booki.png" class="site-logo" height=64px />
             <nav class="header-nav">
-                <ul class="navlist">
-                    <li>Hébergement</li>
-                    <li>Activités</li>
+                <ul class="navlist disflex">
+                    <li href="#accommodations">Hébergement</li>
+                    <li href="#activities">Activités</li>
                 </ul>
             </nav>
         </header>
         <div class="location-form">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
-            <form class="search-location">
-                <input type="button">
+            <form class="search-location disflex">
+                <span class="location disflex"><input type="button"><i class="fas fa-map-marker-alt"></i></span>
                 <input type="textarea" value="Marseille, France">
                 <input type="submit" value="Rechercher">
             </form>
         </div>
         <form class="search-bar"></form>
         <div class="filters">
-            <ul class="filters-list">
+            <ul class="filters-list disflex">
                 <li class="filters-title">Filters</li>
-                <li><div class="filters-list-element"><i class="fa fa-solid fa-money-bill-simple-wave"></i><span>Economique</span></div></li>
+                <li><div class="filters-list-element"><i class="fas fa-money-bill-wave"></i><span>Economique</span></div></li>
                 <li><div class="filters-list-element"><i class="fa fa-solid fa-child"></i><span>Familial</span></div></li>
                 <li><div class="filters-list-element"><i class="fa fa-solid fa-heart"></i><span>Romantique</span></div></li>
-                <li><div class="filters-list-element"><i class="fa fa-solid fa-dog"></i><span>Animaux autorisés</span></div></li>
+                <li><div class="filters-list-element"><i class="fas fa-dog"></i><span>Animaux autorisés</span></div></li>
             </ul>
         </div>
-        <div class="information">
+        <div class="information disflex">
             <!--icone informations-->
-            <P>Plus de 500 logements disponibles dans cette ville</P>
+            <i class="fas fa-info fa-xs"></i><P>Plus de 500 logements disponibles dans cette ville</P>
         </div>
         <main class="main-content">
-            <div class="accommodations-container" id="accommodations">
+            <div class="accommodations-container disflex" id="accommodations">
                 <div class="cards-container all-accommodations">
                     <div class="container-title"><h3>Hébergements à Marseille</h3></div>
                     <div class="accommodation-cards">
-                        <div class="found-accommodation"><img src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" href="#" width=220px/></div>
-                        <div class="found-accommodation"><img src="assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" href="#" width=220px /></div>
-                        <div class="found-accommodation"><img src="assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" href="#" width=220px /></div>
-                        <div class="found-accommodation"><img src="assets/hebergements/4_small/" href="#" width=220px /></div>
-                        <div class="found-accommodation"><img src="assets/hebergements/4_small/" href="#" width=220px /></div>
-                        <div class="found-accommodation"><img src="assets/hebergements/4_small/" href="#" width=220px /></div>
+                        <div class="found-accommodation">
+                            <img src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" href="#" width=220px height=150px/>
+                            <p>Premier element</p>
+                            <p>2e ligne</p>
+                        </div>
+                        <div class="found-accommodation">
+                            <img src="assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" href="#" width=220px  height=150px/>
+                        </div>
+                        <div class="found-accommodation">
+                            <img src="assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" href="#" width=220px  height=150px/>
+                        </div>
+                        <div class="found-accommodation">
+                            <img src="assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" href="#" width=220px  height=150px/>
+                        </div>
+                        <div class="found-accommodation">
+                            <img src="assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" href="#" width=220px  height=150px/>
+                        </div>
+                        <div class="found-accommodation">
+                            <img src="assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" href="#" width=220px  height=150px/>
+                            <p>Hello</p>
+                            <p>Hello again</p>
+                        </div>
                     </div>
                     <div class="see-more"><a href="#">Afficher plus</a></div>
                 </div>
-                <div class="cards-container popular-accommodations">
-                    <div class="popular-accommodation"><img src="#" /></div>
-                    <div class="popular-accommodation"><img src="#" /></div>
-                    <div class="popular-accommodation"><img src="#" /></div>
+                <div class="cards-container popular-accommodations disflex">
+                    <div class="container-title pop-title disflex"><h3>Les plus populaires</h3><i class="fas fa-chart-line"></i></div>
+                    <div class="popular-accommodation disflex">
+                        <img src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" href="#" width=110px height=120px />
+                        <div class="pop-acc-txt disflex">
+                            <p class="pop-text"><span style="font-weight: bold">Name</span><br />
+                            Price</p>
+                            <p>rating</p>
+                        </div>
+                    </div>
+                    <div class="popular-accommodation disflex">
+                        <img src="assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" href="#" width=110px height=120px />
+                        <div class="pop-acc-txt disflex">
+                            <p class="pop-text"><span style="font-weight: bold">Name</span><br />
+                            Price</p>
+                            <p>rating</p>
+                        </div>
+                    </div>
+                    <div class="popular-accommodation disflex">
+                        <img src="assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" href="#" width=110px height=120px />
+                        <div class="pop-acc-txt disflex">
+                            <p class="pop-text"><span style="font-weight: bold">Name</span><br />
+                            Price</p>
+                            <p>rating</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="activities-title">
-                <h2>Activités</h2>
+                <h2>Activités à Marseille</h2>
             </div>
-            <div class="activities-container" id="activities">
-                <div class="activities">
-                    <img src="#" class="large-image" />
-                    <img src="#" />
-                    <img src="#" />
-                    <img src="#" class="large-image"/>
-                    <img src="#" />
-                    <img src="#" />
+            <div class="activities-container disflex" id="activities">
+                <div class="activities disflex">
+                    <div class="activity-card">
+                        <img src="assets/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="large-image" />
+                        <P>Title</P>
+                    </div>
+                    <div class="double">
+                        <div class="activity-card">
+                            <img src="assets/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" height=160px />
+                            <P>Title</P>
+                        </div>
+                        <div class="activity-card">
+                            <img src="assets/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" height=160px />
+                            <P>Title</P>
+                        </div>
+
+                    </div>
+                   
+                    <div class="activity-card">
+                        <img src="assets/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="large-image"/>
+                        <P>Title</P>
+                    </div>
+
+                    <div class="double">
+                        <div class="activity-card">
+                            <img src="assets/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" height=160px/>
+                            <P>Title</P>
+                        </div>
+                        <div class="activity-card">
+                            <img src="assets/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" height=160px />
+                            <P>Title</P>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
     </body>
-    <footer>        
-        <ul>
+    <footer class="disflex">        
+        <ul class="footer-list footer-1 disflex">
+            <li>A propos</li>
             <li>Fonctionnement du site</li>
             <li>Conditions générales de vente</li>
             <li>Données et confidentialité</li>
         </ul>
-        <ul>
+        <ul class="footer-list footer-2 disflex">
+            <li>Nos hébergements</li>
             <li>Charte qualité</li>
             <li>Soumettre votre hôtel</li>
         </ul>
-        <ul>
+        <ul class="footer-list footer-3 disflex">
+            <li>Assistance</li>
             <li>Centre d'aide</li>
             <li>Nous contacter</li>
         </ul>
     </footer>
+
+    
 </html>

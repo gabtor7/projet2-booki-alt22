@@ -11,7 +11,7 @@ body{
     margin: 0 48px;
 }
 
-header, .navlist, .search-location, .filters-list, .accommodations-container{
+.disflex{
     display: flex;
 }
 
@@ -30,6 +30,7 @@ li{
 
 .site-logo{
     height: 64px;
+    margin-top: 40px;
 }
 
 .header-nav{
@@ -46,6 +47,7 @@ li{
 .navlist li{
     border-top: solid 2px white;
     padding: 25px;
+    padding-top: 40px;
 }
 
 .navlist li:hover, .navlist li:active{
@@ -56,6 +58,10 @@ li{
 
 form{
     font-size: 17px;
+}
+
+.location-form{
+    margin: 7px 0px;
 }
 
 .search-location{
@@ -69,15 +75,32 @@ input{
     padding: 15px;
 }
 
-input[type="button"]{
+.location{
+    padding: 0;
+    background-color: #f2f2f2;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
+    vertical-align: middle;
 }
 
-.fa-location-dot{
-    height: 20px;
-    width: 30px;
-    color: black;
+input[type="button"]{
+    background:none;
+    padding: 0;
+    width: 50px;
+    justify-content: center;
+}
+
+i{
+    color: #0065FC;
+}
+
+.location i{
+    text-align: center;
+    vertical-align: middle;
+    margin-left: -50px;
+    height: 50px;
+    width: 50px;
+    padding: 15px;
 }
 
 input[type="submit"]{
@@ -113,7 +136,7 @@ input[type="submit"]:hover{
     justify-content: space-evenly;
     margin: 0px 25px;
     height: 50px;
-    border: solid 2px #f2f2f2;
+    border: solid 3px #f2f2f2;
     border-radius: 50px;
     transition: 0.3s ease-in;
 }
@@ -128,11 +151,15 @@ input[type="submit"]:hover{
     height: 50px;
     width: 50px;
     text-align: center;
-    margin: -2px 12.5px;
-    margin-left: -2px;
+    margin: -3px 12.5px;
+    margin-left: -3px;
     padding-top: 15px;
     border-radius: 50px;
     transition: 0.3s ease-in;
+}
+
+.filters-list-element i:last-child{
+    width: 50px;
 }
 
 .filters-list-element:hover{
@@ -142,6 +169,20 @@ input[type="submit"]:hover{
 
 .filters-list-element:hover i{
     transform: rotate(360deg);
+}
+
+.information{
+    margin: 20px 0px;
+}
+
+.information i{  
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    text-align: center;
+    margin: 20px 10px 20px 0px;
+    border: solid 2px #f2f2f2;
+    border-radius: 30px;
 }
 
 h3{
@@ -154,30 +195,30 @@ h3{
 }
 
 .accommodations-container{
-    width: 100%;
-    flex-wrap: wrap;
     height: fit-content;
-    margin-right: 3.5%;
     border-radius: 25px;
 }
 
 .cards-container{
     background-color: #f2f2f2;
-    padding: 3.5%;
+    padding: 2%;
     flex-direction: column;
 }
 
+.cards-container p{
+    font-size: 16px;
+}
+
 .all-accommodations{
-    width: 66%;
-    margin-right: 3.5%;
-    display: flex;
+    flex: 9;
+    margin-right: 45px;
 }
 
 .accommodation-cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    justify-content: space-between;
 }
 
 .container-title h3{
@@ -185,10 +226,117 @@ h3{
 }
 
 .found-accommodation{
-    flex: 1 0 30%;
-    justify-content: space-between;
+    width: 33%;
+    text-align: center;
+    margin-bottom:35px;
+    background-color: #fff;
+    border: solid 3px #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.found-accommodation p{
+    text-align: left;
+}
+
+.found-accommodation img{
+    width: 100%;
+    object-fit: cover;
 }
 
 .popular-accommodations{
+    flex: 3;
+}
 
+footer{
+    margin: 0 -48px;;
+    padding: 48px 0;
+    background-color: #f2f2f2;
+}
+
+.footer-list{
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-right: 150px;
+}
+
+.footer-list li:first-child{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.see-more a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.popular-accommodations{
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+.pop-title{
+    justify-content: space-between;
+}
+
+.pop-title i{
+    height: 20px;
+    color: black;
+}
+
+.popular-accommodation{
+    flex-direction: row;
+    width: 100%;
+    background-color: #fff;
+    border: solid 3px #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.popular-accommodation img{
+    object-fit: cover;
+}
+
+.pop-acc-txt p{
+    margin: 0;
+}
+
+.pop-acc-txt{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.activities{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.double{
+    display:flex;
+    flex-direction: column;
+}
+
+.double img{
+    height: 160px;
+}
+
+.large-image{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.activity-card{
+    display:flex;
+    flex-direction: column;
+}
+
+.activity-card img{
+    width: 330px;
+    object-fit: cover;
 }
