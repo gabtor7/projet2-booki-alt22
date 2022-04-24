@@ -227,7 +227,7 @@ h3{
 
 .accommodation-cards{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -237,8 +237,13 @@ h3{
     margin-bottom: 20px;
 }
 
+.facc-line{
+    justify-content: space-between;
+    gap: 40px;
+}
+
 .found-accommodation{
-    width: 30%;
+    flex: 4;
     text-align: center;
     margin-bottom:45px;
     background-color: #fff;
@@ -368,18 +373,23 @@ footer{
 }
 
 .activities{
-    width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 25px;
 }
 
 #activities{
     margin-bottom: 50px;
 }
 
+.triple{
+    flex: 1;
+    justify-content: space-between;
+    gap: 25px;
+}
+
 .act{
     flex: 3;
-    margin: 25px;
 }
 
 .act:first-child{
@@ -408,8 +418,6 @@ footer{
 
 .double .activity-card{
     justify-content: space-between;
-    width: 100%;
-
 }
 
 .double .activity-card:first-child{
@@ -425,7 +433,6 @@ footer{
 }
 
 .activity-card{
-    width: fit-content;
     display:flex;
     flex-direction: column;
     overflow: hidden;
