@@ -85,7 +85,8 @@ input{
     background-color: #f2f2f2;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
-    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
 }
 
 input[type="button"]{
@@ -138,37 +139,34 @@ input[type="text"]{
     list-style-type: none;
     font-weight: 600;
     padding-left: 0px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 25px;
+}
+
+.filters-list li{
+    margin-bottom: 12px;
 }
 
 .filters-list-element{
-    display: flex;
+    display: inline-flex;
     justify-content: space-evenly;
-    margin: 0px 25px;
     height: 50px;
     border: solid 3px #f2f2f2;
     border-radius: 50px;
     transition: 0.3s ease-in;
+    white-space: nowrap;
+    align-items: center;
 }
 
 .filters-list-element span{
     padding: 9.5px 0;
     padding-right: 15px;
+    margin-left: 12.5px;
 }
 
 .filters-list-element i{
-    background-color: #deebff;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    margin: -3px 12.5px;
-    margin-left: -3px;
-    padding-top: 15px;
-    border-radius: 50px;
     transition: 0.3s ease-in;
-}
-
-.filters-list-element i:last-child{
-    width: 50px;
 }
 
 .filters-list-element:hover{
@@ -178,6 +176,17 @@ input[type="text"]{
 
 .filters-list-element:hover i{
     transform: rotate(360deg);
+}
+
+.filter-icon{  
+    display:flex; 
+    height: 50px;
+    width: 50px;
+    background-color: #deebff;
+    border-radius: 50px;
+    margin-left: -2px;
+    justify-content: center;
+    align-items: center;
 }
 
 .information{
@@ -228,7 +237,6 @@ h3{
 .accommodation-cards{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -254,6 +262,7 @@ h3{
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 5px #D0D0D0;
+    height: fit-content
 }
 
 .found-accommodation:hover{
@@ -300,7 +309,7 @@ footer{
     flex: 4;
     justify-content: flex-start;
     flex-direction: column;
-    margin-right: 150px;
+    column-gap: 150px;
 }
 
 .footer-list li{
@@ -343,7 +352,7 @@ footer{
 }
 
 .popular-accommodation{
-    height: fit-content;
+    max-height: 180px;
     flex-direction: row;
     width: 100%;
     background-color: #fff;
@@ -354,17 +363,29 @@ footer{
 }
 
 .popular-accommodation img{
+    max-width: 140px;
     object-fit: cover;
+    aspect-ratio: 14 / 15;
 }
 
 .pop-acc-txt p{
     margin: 0;
 }
 
+.pop-acc-txt p:last-child{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .pop-acc-txt{
+    max-width: 50%;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+}
+
+.pop-acc-txt p:last-child{
+    flex-wrap: nowrap;
 }
 
 .activities-title{
@@ -470,6 +491,19 @@ footer{
 @media (min-width: 768px) and (max-width: 992px){
 
 
+    .information{
+        margin: 0px;
+    }
+
+    .filters-title{
+        width: 100%;
+    }
+
+    .filters-list{
+        margin: 10px 0px;
+        flex-direction: column;
+    }
+
     .filters-list-element{
         margin-right: 7px;
     }
@@ -501,15 +535,28 @@ footer{
         margin-bottom: 30px;
     }
 
+    .activities{
+        flex-direction: column;
+    }
+
     .triple{
         justify-content: space-between;
         margin-bottom: 35px;
+    }
+
+    .triple:last-child{
+        flex-direction: row-reverse;
     }
 
     .act{
         max-width: 48%;
         margin: 0;
         justify-content: space-between;
+    }
+
+    .footer-list{
+        font-size: 16px;
+        column-gap: 80px;
     }
 
     .tothetop{
