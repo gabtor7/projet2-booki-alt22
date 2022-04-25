@@ -6,9 +6,10 @@
 }
 
 body{
+	max-width: 1920px;
     font-family: "Raleway", sans-serif;
     font-size: 20px;
-    margin: 0 48px;
+    margin: auto;
 }
 
 .disflex{
@@ -472,10 +473,12 @@ footer{
 }
 
 .tothetop{
+	display: flex;
+	align-items: center;
+	justify-content: center;
     position: fixed;
     bottom: 30px;
     right: 30px;
-    text-align: center;
     padding: 10px;
     height: 40px;
     width: 40px;
@@ -486,6 +489,12 @@ footer{
     background-color: rgba(218, 218, 218, 0.8)
 }
 
+
+@media (max-width: 1920px){
+	body{
+		margin: 0px 48px;
+	}
+}
 
 
 @media (min-width: 768px) and (max-width: 992px){
