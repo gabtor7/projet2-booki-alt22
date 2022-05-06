@@ -484,7 +484,7 @@ footer{
     overflow: hidden;
     background-color: #fff;
     border-radius: 25px;
-    box-shadow: 0px 0px 10px #f2f2f2;
+    box-shadow: 0px 0px 10px #dfdfdf;
 }
 
 .activity-card a span{
@@ -609,7 +609,8 @@ footer{
 @media screen and (max-width: 768px){
 
     body{
-        margin: 0px 15px;;
+        margin: 0px 15px;
+        width: fit-content;
     }
 
     header{
@@ -639,15 +640,16 @@ footer{
     }
 
     .navlist{
-        margin: auto -30px;
+        margin: auto -15px;
         padding: 0;
     }
 
     .navlist a{
-        flex: 6;
+        font-weight: 500;
     }
 
     .navlist li{
+        flex: 6;
         border-top: none;
         border-bottom: solid 3px #f2f2f2;
         padding: 13px;
@@ -683,25 +685,36 @@ footer{
         column-gap: 10px;
     }
 
+    .filters-list-element span{
+        font-weight: 700;
+    }
+
     .filters-title{
+        font-size: 20px;
         width: 100%;
     }
-    
+
     .container-title{
+        font-size: 20px;
         margin-top: 20px;
     }
 
     .cards-container{
-        margin: auto -30px;
-        padding: 20px 30px;
+        margin: auto -15px;
+        padding: 20px 15px;
     }
 
     .accommodations-container{
         flex-direction: column-reverse;
+        gap: 5px;
     }
 
     .cards-container p{
         font-size: 15px;
+    }
+
+    .pop-title i{
+        font-size: 24px;
     }
 
     .popular-accommodations{
@@ -723,11 +736,16 @@ footer{
         margin-bottom: 20px;
     }
 
+    .found-txt p:first-child, .pop-text span{
+        font-size: 17px;
+    }
+
     .found-accommodation{
         margin-bottom: 0;
     }
 
     .see-more{
+        font-size: 20px;
         margin-top: 30px;
     }
 
@@ -736,14 +754,18 @@ footer{
         flex-direction: column;
     }
 
+    .activity-card p{
+        font-size: 19px;
+    }
+
     .triple{
         width: 100%;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
     
     .double{
-        gap: 10px;
+        gap: 20px;
     }
 
     .double .activity-card:first-child{
@@ -759,13 +781,17 @@ footer{
     }
 
     footer{
-        margin:0 -30px;
+        margin:0 -15px;
         flex-direction: column;
         gap: 12px;
     }
 
     .footer-list li{
         margin-bottom: 11px;
+    }
+
+    .footer-list li:first-child{
+        font-size: 19px;
     }
 
     .tothetop{
